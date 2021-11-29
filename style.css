@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-child{
+    margin: 5px;
+    padding: 4px;
+    /* background: red; */
+    display: flex;
+    justify-content: start;
+    padding-left: 22px;
+    list-style: none;
+    width: 100%;
+}
+.div-nav{
+    background-color: rgb(223, 43, 193);
+}
