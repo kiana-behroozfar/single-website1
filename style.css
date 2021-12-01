@@ -1,130 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.nav{
-    margin: 0 auto;
-    padding: 1px;
-   
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-background-color: rgb(83, 122, 122);
-}
-
-.nav-child{
-    margin: 5px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 20px;
-    
-    
-}
-.icon{
-    padding: 10px;
-    padding-right: 20px;
-}
-.ul-nav{
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    min-height: 2px;
-    margin: 20px;
-   
-}
-
-.nav-child2{
-    width: 20px;
-    min-height: 20px;
-    
-   
-}
-.nav-child2:hover{
-    font-size: x-large;
-    color: blue;
-    border-radius: 9px;
-
-}
-
-.nav-child3{
-    padding: 15px;
-}
-.nav-child3:hover{
-    font-size: x-large;
-   
+.nav {
+  margin: 0 auto;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   
 }
-.section-ch{
-    background-image: url(https://thumbs.dreamstime.com/b/healthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg);
-width: 100%;
 
-
+.nav-child {
+  margin: 20px;
+  padding: 10px;
+  border: solid black 1px;
+  display: flex;
+  align-items: center;
+  align-items: center;
 }
-.article{
-    margin: 5px;
-    padding: 50px;
-    background: rebeccapurple;
-     display: grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
-    justify-content: center;
-    
-    
-}
-.article-child{
-    background-color: aqua;
-    padding: 50px;
-    margin: 0 auto;
-    display: grid;
-  
-    
-   
-}
-.img-div{
-    width: 200px;
-    height: 100px;
+.nav-child:hover {
+  font-size: large;
+  background-color: gray;
 }
 
+.ul-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  min-height: 2px;
+  margin: 20px;
+}
+.ul-nav i {
+  margin-right: 30px;
+}
+.ul-nav i:hover{
+    font-size: x-large;
+    color: gray;
+}
+.nav-child2 {
+  width: 20px;
+  min-height: 20px;
+}
+.nav-child2:hover {
+  font-size: x-large;
+  color: blue;
+  border-radius: 9px;
+}
 
-
-
-
-
-
-
+.nav-child3 {
+  padding: 15px;
+}
+.nav-child3:hover {
+  font-size: x-large;
+}
+.section-ch {
+    background-image: url("https://thumbs.dreamstime.com/b/healthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg")
+}
 
 .footer{
-    background-color: forestgreen;
-    margin: 5px;
-    padding: 80px;
- display: grid;
-    grid-template-columns: repeat(4,1fr) 350px;
+    margin: 10px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: start;
-   
-}
 
-.footer-child{
-   display: grid;
-  
-   background-color: lightcoral;
 }
-/* .footer-child:hover{
-    font-size: x-large;
-     color: blue;
-} */
-.d{
-  
-    padding: 10px;
-    display: grid;
+.section-footer{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    padding-left: 40px;    
+}
+.section-footer a:hover{
+    font-size: xx-large;
+    color: gray;
+}
+.p-footer{
+    margin: 50px;
+    display: flex;
+    align-items: center;
    
+    width: 70%;
+    font-size: large;
 }
-.e{
-    /* background-color:lightblue; */
-    padding: 2px;
+@media(max-width:700px){
+ .p-footer{
+     font-size:small;
+     font-weight: 550;
+ }  
+ .section-footer a{
+     margin-right: 15px;
+ } 
 }
