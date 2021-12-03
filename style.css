@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* style nav */
 .nav {
   margin: 0 auto;
   padding: 1px;
@@ -22,7 +23,7 @@
 }
 .nav-child:hover {
   font-size: large;
-  background-color: #c2c2c2
+  background-color: #c2c2c2;
 }
 .ul-nav {
   display: flex;
@@ -57,6 +58,7 @@
 .nav-child3:hover {
   font-size: x-large;
 }
+/* style main */
 .card-img-overlay {
   display: flex;
   flex-direction: column;
@@ -108,7 +110,6 @@
   flex-wrap: wrap;
 }
 .div-sec {
-  /* background-color: blue; */
   width: 300px;
   min-height: 200px;
   display: flex;
@@ -132,7 +133,6 @@
 .div-child2 {
   width: 100%;
   height: 20%;
-  /* background-color: aquamarine; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,7 +142,6 @@
   margin: 10px;
   word-spacing: 10px;
   padding-right: 100px;
-  /* background-color: blueviolet; */
 }
 
 .icon1:hover {
@@ -182,7 +181,7 @@
   font-size: x-large;
   text-decoration: underline;
 }
-
+/* style footer */
 .footer {
   margin: 10px;
   min-height: 200px;
@@ -195,8 +194,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  /* background-color: violet; */
+  width: 30%; 
 }
 .section-footer i:hover {
   font-size: 30px;
@@ -210,7 +208,6 @@
   color: #000;
 }
 .div-footer {
-  /* background-color: yellow; */
   padding-bottom: 50px;
   padding-left: 40px;
 }
