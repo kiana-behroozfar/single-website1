@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .nav {
   margin: 0 auto;
@@ -21,23 +22,24 @@
 }
 .nav-child:hover {
   font-size: large;
-  background-color: gray;
+  background-color: #c2c2c2
 }
-
 .ul-nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
   list-style: none;
   min-height: 2px;
   margin: 20px;
+  flex-wrap: wrap;
 }
 .ul-nav i {
   margin-right: 30px;
+  font-size: 20px;
+  color: #000;
 }
 .ul-nav i:hover {
   font-size: x-large;
-  color: gray;
+  color: #c2c2c2;
 }
 .nav-child2 {
   width: 20px;
@@ -55,21 +57,42 @@
 .nav-child3:hover {
   font-size: x-large;
 }
-.section {
-  background-image: url("https://thumbs.dreamstime.com/b/healthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg");
-}
-.section {
-  background-size: cover;
-  min-height: 700px;
+.card-img-overlay {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  color: #fff;
 }
-.section-ch {
-  background-color: azure;
-  padding: 20px;
-  font-size: calc(60px);
-  font-weight: bold;
+.card-title {
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: #c2c2c2 5px 2px 5px;
+}
+.card-text {
+  font-size: 40px;
+  text-shadow: #c2c2c2 5px 2px 5px;
+}
+@media (max-width: 700px) {
+  .card-title,
+  .card-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .card-title {
+    font-size: 15px;
+  }
+  .card-text {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-ch {
+    font-size: xx-large;
+    font-weight: bold;
+  }
 }
 .div {
   margin: 5px;
@@ -82,15 +105,17 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .div-sec {
-  /* background-color: white; */
+  /* background-color: blue; */
   width: 300px;
   min-height: 200px;
   display: flex;
   flex-direction: column;
+
   border: lightgray solid 0.25px;
-  box-shadow: 1px 1px 1px 1px lightgray;
+  box-shadow: 8px 5px 7px 5px #c2c2c2;
 }
 .div-child1 {
   width: 100%;
@@ -101,13 +126,13 @@
 }
 .div-child1 img {
   margin: 10px;
-  width: 50%;
-  height: 50%;
+  width: 110px;
+  height: 110px;
 }
 .div-child2 {
   width: 100%;
   height: 20%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,24 +142,28 @@
   margin: 10px;
   word-spacing: 10px;
   padding-right: 100px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .icon1:hover {
- 
-  transition: 2s linear;
+  transition: 1s linear;
   background-color: darkgreen;
   padding: 10px 20px 10px 0;
   border-radius: 25px;
 }
-.icon2:hover{
-  
-  transition: 2s linear;
+.icon2:hover {
+  transition: 1s linear;
   background-color: darkgreen;
-  padding: 10px 0 10px 35px;
+  padding: 10px 0 10px 20px;
   border-radius: 25px;
 }
-
+.fa-shopping:hover::after {
+  content: "خرید";
+  background-color: #bf360b;
+  position: relative;
+  font-size: 8px;
+  display: inline-block;
+}
 .div-child2 p {
   margin: 10px;
 }
@@ -169,12 +198,16 @@
   width: 30%;
   /* background-color: violet; */
 }
-.section-footer a:hover {
-  font-size: xx-large;
-  color: gray;
+.section-footer i:hover {
+  font-size: 30px;
+  color: #927575;
 }
 .div-footer a {
   margin-right: 40px;
+}
+.div-footer i {
+  font-size: 25px;
+  color: #000;
 }
 .div-footer {
   /* background-color: yellow; */
@@ -185,7 +218,7 @@
   display: flex;
   align-self: center;
   padding-bottom: 50px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 .p-footer {
   margin: 50px;
@@ -202,12 +235,17 @@
   padding: 10px;
   font-weight: bold;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .p-footer {
     font-size: small;
     font-weight: 550;
   }
   .section-footer a {
     margin-right: 15px;
+  }
+  .span-footer {
+    font-size: small;
+    font-weight: normal;
+    margin: 20px;
   }
 }
